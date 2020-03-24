@@ -60,14 +60,14 @@ html, body {
 
 
   .heading {
-    color: white;
+    color: rgb(0, 11, 31);
     font-size: 2.5em;
     padding-bottom: 10px;
     border-bottom: 2px solid white;
   }
   
   .button {
-      color: #fff !important;
+      color: rgb(0, 11, 31) !important;
       font-size: 1.2em;;
       text-decoration: none;
       background: #2979FF;

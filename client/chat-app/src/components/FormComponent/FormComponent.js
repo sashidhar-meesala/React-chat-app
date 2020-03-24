@@ -1,18 +1,12 @@
 import React from 'react';
 import './FormComponent.css';
+import sendbtn from './icons8-send-comment-50.png';
 
 
-const FormComponent = ({ setMessage, sendMessage, message }) => (
+const FormComponent = () => (
   <form className="form">
-    <input
-      className="input"
-      type="text"
-      placeholder="Type a message..."
-      value={message}
-      onChange={({ target: { value } }) => setMessage(value)}
-      onKeyPress={event => event.key === 'Enter' ? sendMessage(event) : null}
-    />
-    <button className="sendButton" onClick={e => sendMessage(e)}>Send</button>
+    <input className="input" type="text" placeholder="Enter Your Text..."/>
+    <button className="send"><img src={sendbtn} alt="send" /></button>
   </form>
 )
 

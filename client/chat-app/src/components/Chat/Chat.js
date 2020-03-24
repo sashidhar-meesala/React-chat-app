@@ -12,13 +12,11 @@ const Chat=()=>{
         <div className="chatInnerContainer">
          <ChatRoomInfoComponent />
          <ChatTextsComponent />
-         <TextComponent />
-         <div> 
-         </div>
          <FormComponent />
          </div>
-         
-         </div>
+         {/*<TextComponent />*/}
+         </div>  
+   
      );
  }
 

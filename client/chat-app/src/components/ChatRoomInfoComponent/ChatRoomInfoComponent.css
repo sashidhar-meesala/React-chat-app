@@ -1,3 +1,29 @@
-.heading{
-    background-color: tomato;
-}
+.roomInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(0, 11, 31);
+    border-radius: 4px 4px 0 0;
+    height: 60px;
+    width: 100%;
+    position: sticky;
+  }
+  
+  .left {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    color: white;
+  }
+  
+  .right {
+    display: flex;
+    flex: 0.5;
+    justify-content: flex-end;
+    margin-right: 5%;
+  }
+  
+  .onlineIcon {
+    margin-right: 5%;
+  }
