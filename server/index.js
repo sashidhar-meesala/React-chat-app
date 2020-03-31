@@ -12,7 +12,9 @@ app.use(router);
 
 io.on('conection',(socket)=>{
     console.log('we have a new connection');
-
+    socket.on('join',()=>{
+        console.log(name,room);
+    })
     socket.on('disconnect',()=>{
         console.log('user has disconnected')
     })
