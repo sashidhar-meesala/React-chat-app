@@ -57,7 +57,6 @@ const Chat = ({ location }) => {
         <div className="chatOuerContainer">
         <div className="chatInnerContainer">
          <ChatRoomInfoComponent room={room} />
-         <ChatTextsComponent messages={messages} name={name}/>
          <FormComponent message={message} setMessage={setMessage} sendMessage={sendMessage}/>
          </div>
          {<TextComponent users={users} />}
