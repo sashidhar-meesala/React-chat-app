@@ -2,9 +2,10 @@ import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
 import TextComponent from '../TextComponent/TextComponent';
-import ChatTextsComponent from '../ChatTextsComponent/ChatTextsComponent';
+//import ChatTextsComponent from '../ChatTextsComponent/ChatTextsComponent';
 import ChatRoomInfoComponent from '../ChatRoomInfoComponent/ChatRoomInfoComponent';
 import FormComponent from '../FormComponent/FormComponent';
+import Messages from '../Messages/Messages';
 import './Chat.css';
 
 let socket;
@@ -57,6 +58,7 @@ const Chat = ({ location }) => {
         <div className="chatOuerContainer">
         <div className="chatInnerContainer">
          <ChatRoomInfoComponent room={room} />
+         <Messages messages={messages} name={name} />
          <FormComponent message={message} setMessage={setMessage} sendMessage={sendMessage}/>
          </div>
          {<TextComponent users={users} />}

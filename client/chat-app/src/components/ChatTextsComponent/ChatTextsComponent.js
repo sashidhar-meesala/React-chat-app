@@ -1,8 +1,8 @@
-import React from "react";
+/*import React from "react";
 import './ChatTextsComponent.css';
 
-import picx from './max-bender-qUsHZwZHlgU-unsplash.jpg';
-import picy from './tom-roberts-Xbx4h70MIcU-unsplash.jpg';
+//import picx from './max-bender-qUsHZwZHlgU-unsplash.jpg';
+//import picy from './tom-roberts-Xbx4h70MIcU-unsplash.jpg';
 
 const ChatTextsComponent=()=>{
     return(
@@ -37,3 +37,4 @@ const ChatTextsComponent=()=>{
 export default ChatTextsComponent;
 
 
+*/
