@@ -47,11 +47,17 @@ https://www.youtube.com/watch?v=hQAHSlTtcmY
 react chat app tutorials
 
 https://www.youtube.com/watch?v=hiiaHyhhwBU
+
 https://www.youtube.com/watch?v=ZwFA3YMfkoc
+
 https://www.youtube.com/watch?v=a-JKj7m2LIo&t=70s
+
 https://www.youtube.com/watch?v=tHbCkikFfDE&t=1588s
+
 https://www.youtube.com/watch?v=8ikvKq4Mz8c&t=441s
+
 https://www.youtube.com/watch?v=E4V6nbP_NoQ
+
 https://www.youtube.com/watch?v=ZwFA3YMfkoc
 
 
