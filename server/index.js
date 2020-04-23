@@ -1,6 +1,7 @@
 const http = require('http');
 const express = require('express');
 const socketio = require('socket.io');
+const corsx= require('cors');
 const { addUser, removeUser, getUser, getUsersInRoom } = require('./users');
 
 const router = require('./router');
@@ -9,7 +10,9 @@ const app = express();
 const server = http.createServer(app);
 const io = socketio(server);
 
+
 app.use(router);
+app.use(corsx());
 
 io.on('connect', (socket) => {
     socket.on('join', ({ name, room }, callback) => {

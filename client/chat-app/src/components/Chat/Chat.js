@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import queryString from 'query-string';
 import io from "socket.io-client";
-import TextComponent from '../TextComponent/TextComponent';
 //import ChatTextsComponent from '../ChatTextsComponent/ChatTextsComponent';
 import ChatRoomInfoComponent from '../ChatRoomInfoComponent/ChatRoomInfoComponent';
 import FormComponent from '../FormComponent/FormComponent';
 import Messages from '../Messages/Messages';
+import onlineUsers from "../onlineUsers/usersInfo";
 import './Chat.css';
+
 
 let socket;
 
@@ -16,7 +17,7 @@ const Chat = ({ location }) => {
     const [users, setUsers] = useState('');
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
-    const ENDPOINT = 'https://project-chat-application.herokuapp.com/';
+    const ENDPOINT = 'https://react-chat-app-server-sashi.herokuapp.com/';
   
     useEffect(() => {
       const { name, room } = queryString.parse(location.search);
@@ -55,15 +56,16 @@ const Chat = ({ location }) => {
 
     //jsx
     return (
+         
         <div className="chatOuerContainer">
-        <div className="chatInnerContainer">
-         <ChatRoomInfoComponent room={room} />
-         <Messages messages={messages} name={name} />
-         <FormComponent message={message} setMessage={setMessage} sendMessage={sendMessage}/>
-         </div>
-         {<TextComponent users={users} />}
+          <div className="chatInnerContainer">
+          <ChatRoomInfoComponent room={room} />
+          <Messages messages={messages} name={name} />
+          <FormComponent message={message} setMessage={setMessage} sendMessage={sendMessage}/>
+          </div>
+          <onlineUsers users={users}/>
          </div>  
-   
+        
      );
  }
 
