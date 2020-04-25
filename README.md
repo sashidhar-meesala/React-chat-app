@@ -5,22 +5,24 @@
 Team: sashidhar meesala (N01324566)
 
 ## Working 
-creating a chat room / annonymous application using react and socket.io.
+creating a chat room / annonymous channel chatting application using react and socket.io.
 
-The user is required to choose username and channel name so that a new channel gets created.
+--The user is required to choose username and channel name so that a new channel gets created.
 
-As soon as the user enters the channel, a socket is opened and channel admin's message is emmited on to the screen.
+--As soon as the user enters the channel, a socket is opened and channel admin's message is emmited on to the screen.
 
-Now user can share this channel name and ask the other user to join the channel and vice-versa.
+--Now user can share this channel name and ask the other user to join the channel and vice-versa.
 
-Once the other user has the channel Name and enters the exact channel name the other users the same channel and gets greeted by the 
+--Once the other user has the channel Name and enters the exact channel name the other users the same channel and gets greeted by the 
 admin.
 
-Here, the other users will be notified about the new user that has entered the chat/channel.
+--Here, the other users will be notified about the new user that has entered the chat/channel.
 
-Now, users can send text messages to each other on channel.
+--Now, users can send text messages to each other on channel.
 
-Once, the user leaves the channel or exits the chat . The same gets notified to the others users as well.
+--Once, the user leaves the channel or exits the chat . The same gets notified to the others users as well.
+
+The project mainly focuses on the usage of components and socket.io.
 
 # Deployment
 
