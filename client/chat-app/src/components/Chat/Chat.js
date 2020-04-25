@@ -5,7 +5,7 @@ import io from "socket.io-client";
 import ChatRoomInfoComponent from '../ChatRoomInfoComponent/ChatRoomInfoComponent';
 import FormComponent from '../FormComponent/FormComponent';
 import Messages from '../Messages/Messages';
-import onlineUsers from "../onlineUsers/usersInfo";
+import OnlineUsers from "../OnlineUsers/OnlineUsers";
 import './Chat.css';
 
 
@@ -63,7 +63,7 @@ const Chat = ({ location }) => {
           <Messages messages={messages} name={name} />
           <FormComponent message={message} setMessage={setMessage} sendMessage={sendMessage}/>
           </div>
-          <onlineUsers users={users}/>
+          <OnlineUsers users={users}/>
          </div>  
         
      );

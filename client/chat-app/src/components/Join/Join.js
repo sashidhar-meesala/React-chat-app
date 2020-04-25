@@ -8,16 +8,16 @@ export default function Join(){
    return (
       <div className="formnOuterContainer">
         <div className="formInnerContainer">
-          <h1 className="heading"> ANNONYMOUS!</h1>
-          <p>Create a channel by yourself or enter a room if someone has shared you the channel name</p>
+          <h1 className="heading"> ANNONYMOUS! IM <span role="img" aria-label="emoji">❤️</span></h1>
+          <p>Create a channel  or enter a channel if someone has shared you the channel name</p>
           <div>
-            <input placeholder="Name" className="formInput" type="text"  onChange={(event) => setName(event.target.value)}/>
+            <input placeholder="Enter your Name Here" className="formInput" type="text"  onChange={(event) => setName(event.target.value)}/>
           </div>
           <div>
-            <input placeholder="Room" className="formInput button-margin" type="text" onChange={(event) => setRoom(event.target.value)} />
+            <input placeholder="Enter Channel Name Here" className="formInput button-margin" type="text" onChange={(event) => setRoom(event.target.value)} />
           </div>
           <Link onClick={e => (!name || !room) ? e.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
-            <button className="button button-margin">Enter Room</button>
+            <button className="button button-margin">Enter Channel Now!</button>
           </Link>
         </div>
       </div>
