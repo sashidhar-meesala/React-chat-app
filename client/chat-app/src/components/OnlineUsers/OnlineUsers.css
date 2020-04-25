@@ -1,0 +1,36 @@
+.onlineInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    color: rgb(253, 251, 251);
+    height: 70%;
+    justify-content: space-between;
+    background-color: rgb(17, 11, 11);
+    padding: 1.9em;
+    width: 40%;
+  }
+  
+  .OnlineInfoContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50%;
+  }
+  
+  .Item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .OnlineInfoContainer img {
+    padding-left: 10px;
+  }
+  
+  .onlineInfo h2 {
+    margin-bottom: 0px;
+  }
+  
+  @media (min-width: 320px) and (max-width: 800px) {
+    .onlineInfo {
+      display: none;
+    }
+  }
